@@ -1,0 +1,38 @@
+{
+  "name": "@xberg-io/opencode-crawlberg",
+  "version": "0.2.3",
+  "description": "OpenCode tools for web crawling and scraping with the crawlberg CLI.",
+  "keywords": [
+    "opencode",
+    "web-scraping",
+    "crawling",
+    "html-to-markdown",
+    "headless-chrome"
+  ],
+  "homepage": "https://xberg.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyenthdat/opencode-crawlberg.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/plugin.js",
+  "exports": {
+    ".": "./src/plugin.js",
+    "./server": "./src/plugin.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "opencode": ">=1.17.8"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.17.8"
+  }
+}
